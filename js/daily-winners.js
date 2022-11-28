@@ -84,7 +84,7 @@ function createDailyWinner(forShowMore = false) {
           <p style="margin-bottom: 4rem">vs</p>
           <div class="team-image">
             <img src="${dailyWinner[i].second_team.imageSrc}" />
-            <p>${dailyWinner[i].first_team.name}</p>
+            <p>${dailyWinner[i].second_team.name}</p>
           </div>
         </div>
         <div class="result">
@@ -106,7 +106,7 @@ function createDailyWinner(forShowMore = false) {
           <p style="margin-bottom: 4rem">vs</p>
           <div class="team-image">
             <img src="${dailyWinner[i].second_team.imageSrc}" />
-            <p>${dailyWinner[i].first_team.name}</p>
+            <p>${dailyWinner[i].second_team.name}</p>
           </div>
         </div>
         <div class="result">

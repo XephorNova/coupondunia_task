@@ -36,6 +36,59 @@
   color: #4a4a4a;
 }
 
+.your-prediction-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.your-predications-i {
+  display: grid;
+  grid-template-columns: 50% 30% 30%;
+}
+
+.your-predications-i-items > div.teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.your-predications-i-items > img {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 4rem;
+  margin-right: 3rem;
+}
+
+.your-predications-i-items > div.runs {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 2rem;
+  width: 4rem;
+}
+
+.runs > p.winner-runs {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+
+.runs > p.winner-country {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.your-prediction-table-heading {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #4a4a4a;
+}
+
 .number-of-correct-predication {
   font-size: 1.2rem;
   color: #4a4a4a;
@@ -173,4 +226,8 @@
   color: white;
   cursor: pointer;
   margin-left: 30.2rem;
+}
+
+hr.dashed {
+  border-top: 0.5rem dashed #4a4a4a;
 }
