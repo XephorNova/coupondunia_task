@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/predict.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+
+    <script src="./js/utils.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-nav">
+        <div class="predict-button">
+          <h1>Predict & Win</h1>
+        </div>
+      </div>
+      <section class="section-part">
+        <div class="predict-section">
+          <div class="predict-description">
+            Choose the team you think win the next T20 match,
+            <br />
+            Answer the prediction question as accurately as possible & you can
+            win amazing prizes!
+          </div>
+          <div class="prediction-card">
+            <h1 class="time-circle" id="timer"></h1>
+            <div class="prediction-inner-card">
+              <div class="match-show">
+                <img
+                  src="./assets/Jerseys//mumbai_jersey.png"
+                  class="match-team-image"
+                />
+                <p style="font-size: 2rem; color: azure">vs</p>
+                <img
+                  src="./assets/Jerseys//chennai_jersey.png"
+                  class="match-team-image"
+                />
+                <div class="radio-form">
+                  <label>
+                    <input type="radio" value="Mumbai" name="team" checked />
+                    <div class="radio-image">
+                      <img class="radio-i" src="./assets/Misc/tick.png" />
+                    </div>
+                  </label>
+                  <label>
+                    <input type="radio" value="Chennai" name="team" />
+                    <div class="radio-image">
+                      <img class="radio-i" src="./assets/Misc/tick.png" />
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="prediction-form">
+                <div class="prediction-heading-form">
+                  <h1 class="prediction-heading-form-header">
+                    How many runs will the winning team score
+                  </h1>
+                  <input
+                    class="prediction-form-input"
+                    id="runs"
+                    value="1"
+                    type="text"
+                  />
+                  <input
+                    hidden
+                    value="2022-04-15 07:30:00"
+                    id="match_date"
+                    type="text"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  onclick="submitPop()"
+                  class="prediction-form-submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+            <div class="prediction-note">
+              <h1 id="predication"></h1>
+            </div>
+            <div class="note">
+              <b style="font-size: 1.7rem; color: #4a4a4a">Please Note : </b
+              ><span style="font-size: 1.7rem; color: #4a4a4a"
+                >Winners will be announced on 12PM, 30th Oct 2021</span
+              >
+            </div>
+          </div>
+          <div class="how-to-play">
+            <h1>How to Play</h1>
+            <hr />
+            <ul>
+              <li>
+                Predict winning team & thier score. You can change your answer
+                multiple times till 1 hour after the match starts - Check the
+                countdown timer to know time left.
+              </li>
+              <li>
+                For each match, Top 5 correct predictors with closest score
+                predictions will win x prize.
+              </li>
+              <li>
+                Every correct predication improves your chance of winning in the
+                weekly draw.
+              </li>
+              <li>
+                Complete activities to earn predications - Play more, Predict
+                more & Improve your chances of winning.
+              </li>
+            </ul>
+          </div>
+          <div class="social-share">
+            Share on:
+            <span
+              ><img src="./assets/Misc/facebook.png" class="social-share-image"
+            /></span>
+
+            <span> Facebook </span>
+            <span
+              ><img src="./assets/Misc/twitter.png" class="social-share-image"
+            /></span>
+            <span style="text-align: center"> Twitter </span>
+          </div>
+        </div>
+      </section>
+      <section class="dashboard-section">
+        <h1 class="dash-heading">DASHBOARD</h1>
+        <div class="dashboard-flex">
+          <div class="your-prediction">
+            <h1 class="your-prediction-h1">your predications</h1>
+            <p class="number-of-correct-predication">
+              Correct Predictions so far : 3
+            </p>
+            <hr />
+          </div>
+          <div class="daily-winners-box">
+            <p class="daily-winner-heading">Daily winners</p>
+            <div class="daily-winner-table" id="winner-table">
+              <div class="daily-winner-table-head">
+                <span>Date and Time</span>
+                <span>Match Between</span>
+                <span>Result</span>
+              </div>
+            </div>
+            <button
+              class="show-more-matches"
+              id="match-button"
+              onclick="showMore()"
+            >
+              Show Previous Matches
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+    <div id="scoreModal" class="modal-score">
+      <!-- Modal content -->
+      <div class="modal-content-score">
+        <img
+          class="modal-ampire-image"
+          src="assets/Misc/prediction_submit.png"
+        />
+        <p id="modal-score">Your Score</p>
+        <button
+          id="modalScoreClose"
+          onclick="submitScore()"
+          class="score-modal-close"
+        >
+          Submit Score
+        </button>
+      </div>
+    </div>
+    <div id="winnerModal" class="winner-modal">
+      <!-- Modal content -->
+      <div class="modal-content-winner">
+        <h1>Daily Prize Winners</h1>
+        <div class="winner-grid"></div>
+        <div class="close-winner" onclick="closeWinnerModal()">x</div>
+      </div>
+    </div>
+    <script src="./js/winner-list-modal.js"></script>
+    <script src="./js/show-score-modal.js"></script>
+    <script src="./js/daily-winners.js"></script>
+  </body>
+</html>

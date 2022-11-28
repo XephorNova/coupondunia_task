@@ -1,0 +1,176 @@
+.dashboard-section {
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+
+.dash-heading {
+  text-transform: uppercase;
+  color: #4a4a4a;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.dashboard-flex {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.your-prediction {
+  width: 27.7rem;
+  /* height: 10rem; */
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 0 3rem rgb(0 0 0 / 50%);
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+}
+
+.your-prediction-h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.number-of-correct-predication {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+
+.daily-winners-box {
+  width: 85rem;
+  height: fit-content;
+  padding: 3.5rem 1rem 2rem 1rem;
+  background-color: #04085d;
+}
+
+.daily-winner-heading {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: auto 0;
+}
+
+.daily-winner-table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.daily-winner-table-head {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #3f45c1;
+  color: #fffee9;
+}
+.daily-winner-table-head > :first-child {
+  text-align: center;
+  width: 21.75rem;
+}
+
+.daily-winner-table-head > :nth-last-child(2) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+}
+
+.daily-winner-table-head > :last-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35rem;
+}
+
+.daily-winner-content {
+  padding: 1rem;
+  background-color: #fff;
+  margin: 2rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+}
+
+.daily-winner-content-date-time {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: bold;
+  width: 21.5rem;
+}
+
+.daily-winner-content-match-between {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+}
+
+.team-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 9rem;
+  min-width: 9rem;
+  max-height: 9rem;
+  min-height: 9rem;
+}
+
+.team-image > p {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+.team-image > img {
+  width: 6rem;
+  height: 4.5rem;
+}
+
+.result {
+  width: 35rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result > :first-child {
+  font-size: 1.5rem;
+}
+
+.result > :nth-child(2) {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.result > :last-child {
+  cursor: pointer;
+  width: 14rem;
+  height: 3.5rem;
+  border-radius: 0.3rem;
+  background-color: #b91d42;
+}
+
+.show-more-matches {
+  width: 25.5rem;
+  height: 4rem;
+  background-color: #ff9e00;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 1rem auto;
+  color: white;
+  cursor: pointer;
+  margin-left: 30.2rem;
+}
